@@ -1,14 +1,18 @@
 [workspace]
-members =["apps/*", "crates/*"]
+members = [
+    "crates/d3xo-core"
+]
+
 
 [workspace.package]
 name = "d3xo"
 version = "0.1.0"
 edition = "2021"
+rust-version = "1.85"
 
 [workspace.dependencies]
 anyhow = "1"
-serde = {version = "1", features = ["derive"] }
+serde = { version = "1", features = ["derive"] }
 tokio = { version = "1", features = ["full"]}
 thiserror = "1"
 tracing = "0.1"
